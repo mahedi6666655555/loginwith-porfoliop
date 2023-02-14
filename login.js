@@ -13,7 +13,7 @@ document.getElementById("btn-submit").addEventListener("click", function(){
     doc4.value=""
 
 if(forvalue==="mahedi111"&&forvalue2==="mahedi"){
-    window.location.href="index.html"
+    window.location.href="login.html"
 }
 else{
     alert("not right value and not right mail")
