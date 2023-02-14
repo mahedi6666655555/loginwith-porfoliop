@@ -1,101 +1,51 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="shortcut icon" href="images/logifavicon.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Ludiflex | Login</title>
+
 </head>
+<body>
+   <div class="box">
+    <div class="container">
 
-<body class="bg-slate-800">
-
-    <!-- this is header section -->
-
-    <header class="w-full  h-20  ">
-        <nav class="flex w-4/5  justify-between  items-center  mx-auto h-20">
-            <h1 class="text-purple-600 text-5xl font-extrabold">Mahedi</h1>
-            <ul class="flex text-white  ">
-                <li class="cursor-pointer pl-5">Home</li>
-                <li class="cursor-pointer pl-5">About</li>
-                <li class="cursor-pointer pl-5">Contact us</li>
-                <li class="cursor-pointer pl-5">Our services</li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <!-- this is banner section -->
-
-    <section class="mt-5 w-full h-screen">
-
-        <div>
-            <div>
-                <div>
-                    <div class=" text-white text-container text-center">
-
-                        <img src="images/logo.jpg" class="rounded-[50%]  mx-auto h-48 " alt="">
-                        <h1 class="text-3xl font-extrabold pt-5">Hire me</h1>
-                        <h1 class="text-5xl font-extrabold pt-6">I am <span class="text-purple-800">Mahedi Hassan</span>
-                        </h1>
-                        <p class="w-1/2 mx-auto pt-5">my nae is <span class="text-purple-600">mahedi hassna </span> i am
-                            a webdeveloper my skiloles javascript html css Lorem <span class="text-purple-800">ipsum
-                                dolor</span>
-                            sit
-                            amet consectetur <span class="text-purple-800">adipisicing</span> elit.</p>
-
-                        <div>
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="top">
+            <span>Have an account?</span>
+            <header>Login</header>
         </div>
 
+        <div class="input-field">
+            <input type="text" class="input" placeholder="Username" id="mail">
+            <i class='bx bx-user' ></i>
+        </div>
 
-    </section>
+        <div class="input-field">
+            <input type="Password" class="input" placeholder="Password" id="pass">
+            <i class='bx bx-lock-alt'></i>
+        </div>
 
+        <div class="input-field">
+            <button class="submit" id="btn-submit">Log in</button>
+        </div>
 
-    <!-- this is new section  its for about section -->
-
-
-    <section>
-        <div>
-            <div>
-                <h1 class="text-purple-900 text-6xl font-extrabold text-center mb-7">
-                    about
-                </h1>
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check">
+               <label for="check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
             </div>
         </div>
-    </section>
+    </div>
+</div>  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+<script src="login.js"></script>
 </body>
-
 </html>
